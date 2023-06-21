@@ -1,0 +1,25 @@
+// @import "../../style.scss";
+
+// .home {
+//   @include themify($themes) {
+//     padding: 100px 140px;
+//     background-color: themed("bgSoft");
+
+//     @include mobile {
+//       padding: 10px;
+//     }
+
+//     @include tablet {
+//       padding: 20px;
+//     }
+//   }
+// }
+
+// .home {
+//   display: flex;
+// }
+
+.home {
+  display: flex;
+  margin-top: 60px;
+}

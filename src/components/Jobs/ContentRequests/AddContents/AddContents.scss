@@ -1,0 +1,53 @@
+.addContents {
+  .add {
+    display: flex;
+    align-items: center;
+    h3 {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+      margin: 20px auto;
+      padding: 30px 20px;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: 0.4s ease-in-out;
+      &:hover {
+        box-shadow: var(--theme-color) 0px 3px 8px 0px,
+          var(--theme-color) 0px 0px 0px 1px;
+      }
+    }
+  }
+}
+.formAddContent {
+  display: flex;
+  flex-direction: column;
+  .group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    label {
+      margin-bottom: 10px;
+    }
+    input,
+    textarea,
+    select {
+      width: 100%;
+      border: 1px solid var(--theme-color);
+      border-radius: 10px;
+      padding: 10px 20px;
+      outline-color: var(--theme-color);
+    }
+    option {
+      color: var(--theme-color);
+    }
+  }
+  button {
+    background-color: var(--theme-color);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+  }
+}

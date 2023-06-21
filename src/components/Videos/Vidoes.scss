@@ -1,0 +1,99 @@
+.videos {
+  margin: 20px 0;
+  .video {
+    border-radius: 10px;
+    background: var(--white1);
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .title {
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 10px;
+    .img {
+      width: 50px;
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+  .info {
+    padding: 10px;
+    margin-bottom: 20px;
+    p {
+      color: gray;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .vid {
+      //   width: 100%;
+      video {
+        width: 100%;
+        max-height: 600px;
+        min-height: 400px;
+      }
+    }
+  }
+  .likeShare {
+    ul {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--white3);
+      margin: auto;
+      li {
+        flex: 1;
+        height: 32px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+          background-color: #ccc;
+        }
+        h3 {
+          color: #65676b;
+          font-size: 15px;
+          padding-left: 10px;
+        }
+        .svg {
+          height: 18px;
+        }
+      }
+    }
+
+    // span {
+    //   &:hover {
+    //     background: var(--white2);
+    //   }
+    // }
+  }
+  .reaction {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+    .icons {
+      gap: 0.2rem;
+      display: flex;
+      align-items: center;
+      .svg {
+        width: 20px;
+      }
+    }
+    a {
+      font-size: 16px;
+      font-weight: 100;
+      text-decoration: none;
+      color: var(--dark1);
+      margin-left: 8px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.articleAndSearches {
+  margin: 20px 0;
+  .typeArticleAndSearches {
+    display: flex;
+    gap: 10px;
+  }
+  .articleType,
+  .searchType {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 15px;
+    &:hover {
+      background-color: #0099a8;
+      color: #fff;
+    }
+  }
+  .searchType {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

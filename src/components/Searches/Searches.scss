@@ -1,0 +1,121 @@
+.searches {
+  display: flex;
+  margin-top: 60px;
+  .right {
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    flex: 3;
+    .info {
+      padding: 10px;
+      .top {
+        border-bottom: 1px solid #ccc;
+        padding: 20px 0;
+        .download {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          .btn {
+            background-color: #0099a8;
+            color: #fff;
+            padding: 8px;
+            border-radius: 10px;
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+          }
+        }
+        .title {
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 30px;
+        }
+      }
+      .txt {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 2;
+        }
+      }
+      .author {
+        padding: 10px 0;
+      }
+    }
+    .img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .left {
+    flex: 1;
+    .top {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0;
+      margin: 10px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    .articleList {
+      .articlce {
+        padding: 10px;
+        margin-bottom: 10px;
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #ccc;
+        }
+        .img {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .articlces {
+    display: flex;
+    flex-direction: column;
+    .left {
+      .articleList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .articlces {
+    display: flex;
+    flex-direction: column;
+    .left {
+      .articleList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .articlces {
+    display: flex;
+    flex-direction: column;
+    .left {
+      .articleList {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

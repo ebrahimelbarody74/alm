@@ -1,0 +1,99 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../assets//images/site_images/Group\ 14077.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f2f2f6;
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    p {
+      color: #fff;
+    }
+    .right {
+      flex: 1;
+      h1 {
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        color: #fff;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        height: 100px;
+      }
+    }
+  }
+  .left {
+    flex: 1;
+    .logo {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    h3 {
+      font-size: 33px;
+      font-weight: 400;
+      color: #ffff;
+      margin-bottom: 15px;
+    }
+    font-size: clamp(20px, 2vw, 25px);
+    font-weight: 400;
+    color: #ffff;
+  }
+  .btns {
+    margin: 10px 0 20px;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    a {
+      width: 100% !important;
+      display: block;
+      height: 100%;
+    }
+    button {
+      border: none;
+      font-size: 25px;
+      padding: 0.5rem 3rem;
+      cursor: pointer;
+      width: 250px;
+    }
+    .btn-reg {
+      background-color: #0099a8;
+      color: #ffff;
+    }
+    .btn-reg2 {
+      background-color: #f2f2f6;
+      color: #707070;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .welcome {
+    .box {
+      flex-direction: column;
+      text-align: center;
+      .right {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome {
+    .btns {
+      width: 50%;
+      margin: auto;
+      flex-direction: column;
+    }
+  }
+}

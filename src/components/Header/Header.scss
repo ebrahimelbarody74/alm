@@ -1,0 +1,316 @@
+:root {
+  --background: #f0f2f5;
+  --white1: #ffffff;
+  --white2: #dde2e7;
+  --white3: #4e4f5080;
+  --white4: #ceced6;
+  --dark1: #606264;
+  --dark2: #0f0d0d;
+  --blue1: #297be5;
+  --scrollBar: #656768;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  height: 60px;
+  width: 100%;
+  background: var(--white1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+
+  justify-content: space-between;
+  z-index: 999;
+  padding: 0 16px;
+  // margin-bottom: 400px;
+  .menu {
+    display: none !important;
+  }
+}
+
+.header .logoSearch {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.header .logoSearch .logo {
+  flex: 1;
+  border-radius: 50%;
+  display: flex;
+  cursor: pointer;
+  width: 100px;
+  padding: 0 20px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.header .logoSearch .logo i {
+  color: #ffffff;
+  font-size: 35px;
+}
+
+.header .logoSearch .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+
+  padding: 0 11px;
+  position: relative;
+}
+
+.header .logoSearch .search .svg {
+  // width: 22px;
+  // position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  right: 15px;
+}
+
+.header .logoSearch .search input {
+  color: var(--dark1);
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: #f0f2f5;
+  padding: 8px 30px 8px 8px;
+  border-radius: 20px;
+}
+
+.header .logoSearch .search input::-webkit-input-placeholder {
+  color: var(--dark1);
+}
+
+.header .logoSearch .search input:-ms-input-placeholder {
+  color: var(--dark1);
+}
+
+.header .logoSearch .search input::-ms-input-placeholder {
+  color: var(--dark1);
+}
+
+.header .logoSearch .search input::placeholder {
+  color: var(--dark1);
+}
+
+.header .mainMenu {
+  width: 700px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.header .mainMenu .svg {
+  width: 125px;
+  height: 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header .mainMenu .svg img {
+  width: 28px;
+}
+
+.header .mainMenu .svg::before {
+  content: "";
+  background: #0099a8;
+  position: absolute;
+  bottom: -5px;
+  background: #0099a8;
+  width: 0;
+  height: 3px;
+}
+
+.header .mainMenu .svg:hover {
+  background: var(--white2);
+}
+
+.header .mainMenu .svg.active::before {
+  width: 100%;
+}
+
+.header .profileTools {
+  height: 100%;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-end;
+}
+
+.header .profileTools .profile {
+  cursor: pointer;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 112px;
+  height: 42px;
+  padding: 0 5px;
+}
+
+.header .profileTools .profile .img {
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.header .profileTools .profile .username {
+  font-weight: 700;
+  padding-left: 5px;
+  color: var(--dark2);
+}
+
+.header .profileTools .profile:hover {
+  background: var(--white2);
+}
+
+.header .profileTools .tools {
+  width: 180px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header .profileTools .tools .svg {
+  width: 40px;
+  height: 40px;
+  background: var(--white2);
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  .drop {
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    left: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    .user {
+      width: 80%;
+      margin: auto;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      margin-bottom: 20px;
+      transition: 0.4s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: #ccc;
+      }
+      img {
+        width: 45px;
+        border-radius: 50%;
+      }
+    }
+
+    .box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+      padding: 10px 9px;
+      transition: 0.4s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+}
+
+.header .profileTools .tools .svg img {
+  width: 18px;
+}
+
+.header .profileTools .tools .svg:hover {
+  background: var(--white3);
+}
+
+@media (max-width: 480px) {
+  .header .menu {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    .activeInput {
+      display: block !important;
+      padding-right: 45px;
+    }
+    .activesearch {
+      display: none !important;
+    }
+  }
+}
+
+
+.logo{
+  width: 90px;
+  text-align: center;
+}
