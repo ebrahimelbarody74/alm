@@ -30,6 +30,7 @@ function VideoOrRelis() {
               style={
                 activeVideo === "video" ? { color: "#fff " } : { color: "#000" }
               }
+              className="font-xl"
             />
             <h3
               style={
@@ -53,6 +54,7 @@ function VideoOrRelis() {
             onClick={() => setActiveVideo("rails")}
           >
             <MdOutlineSlowMotionVideo
+              className="font-xl"
               style={
                 activeVideo === "rails" ? { color: "#fff " } : { color: "#000" }
               }

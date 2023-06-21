@@ -46,6 +46,7 @@ const buttonStyle = {
   // width: "30px",
   background: "none",
   border: "0px",
+  display:"none"
 };
 
 
@@ -81,7 +82,7 @@ function Posts() {
   const zoomRef = useRef(null);
 
   const themeColor = localStorage.getItem("themeColor");
-
+const indicators = (index) => <div className="indicator">0</div>;
   const properties = {
     prevArrow: (
       <button style={{ ...buttonStyle }}>
@@ -155,7 +156,7 @@ function Posts() {
         <div className="card-body d-block p-0 mb-3">
           <div className="row pe-2 ps-2">
             <div className="col-sm-12 p-1">
-              <Slide {...properties}>
+              <Slide {...properties} indicators={true} >
                 {slideImages.map((slideImage, index) => (
                   <div key={index}>
                     <div
@@ -475,7 +476,7 @@ function Posts() {
         <div className="card-body d-block p-0 mb-3">
           <div className="row pe-2 ps-2">
             <div className="col-sm-12 p-1">
-              <Slide>
+              <Slide {...properties} indicators={true}>
                 {slideImages.map((slideImage, index) => (
                   <div key={index}>
                     <div
@@ -645,7 +646,7 @@ function Posts() {
         <div className="card-body d-block p-0 mb-3">
           <div className="row pe-2 ps-2">
             <div className="col-sm-12 p-1">
-              <Slide>
+              <Slide {...properties} indicators={true}>
                 {slideImages.map((slideImage, index) => (
                   <div key={index}>
                     <div
@@ -815,7 +816,7 @@ function Posts() {
         <div className="card-body d-block p-0 mb-3">
           <div className="row pe-2 ps-2">
             <div className="col-sm-12 p-1">
-              <Slide>
+              <Slide {...properties} indicators={true}>
                 {slideImages.map((slideImage, index) => (
                   <div key={index}>
                     <div
@@ -994,7 +995,7 @@ function Posts() {
             <div className="row pe-2 ps-2">
               <div className="col-sm-12 p-1">
                 <div className="slide-container">
-                  <Slide>
+                  <Slide {...properties} indicators={true}>
                     {slideImages.map((slideImage, index) => (
                       <div key={index}>
                         <div
