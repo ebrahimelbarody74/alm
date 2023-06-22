@@ -10,32 +10,7 @@ import { BiImageAdd } from "react-icons/bi";
 import { FiMoreHorizontal } from "react-icons/fi";
 function Share() {
   return (
-    // <div className="share">
-    //   <di className="top">
-    //     <div className="img">
-    //       <img src={profile} />
-    //     </div>
-    //     <input type="text" placeholder="بم تفكر ي ابراهيم" />
-    //   </di>
-    //   <div className="buttons">
-    //     <span>
-    //       <div className="svg">
-    //         <img src={LiveVideo} alt="" />
-    //       </div>
-    //       <h4>Live Video</h4>
-    //     </span>
-    //     <input type="file" style={{ display: "none" }} id="file" />
-    //     <label htmlFor="file">
-    //       <span>
-    //         <div className="svg">
-    //           <img src={photo} alt="" />
-    //         </div>
-    //         <h4>Photo/Video</h4>
-    //       </span>
-    //     </label>
-    //   </div>
-    // </div>
-    <div className="card w-100 shadow-xss rounded-xxl border-0 pe-4 pt-4 ps-4 pb-3 mb-3">
+    <div className="card w-100 shadow-xss rounded-xxl border-0 pe-4 pt-4 ps-4 pb-3 mb-3 ">
       <div className="card-body p-0">
         <a
           href="#"

@@ -1429,7 +1429,7 @@ ul {
 .theme-dark .dark-bg-transparent {
   background-color: transparent !important;
 }
-.theme-dark .nav-tabs li a.active {
+.theme-dark .nav-tabs li div.active {
   border-bottom: 2px #ddd solid !important;
   color: #fff !important;
 }
@@ -7532,6 +7532,9 @@ fieldset:disabled .btn {
 }
 .h-100 {
   height: 100% !important;
+}
+.h-100px{
+  height: 100px;
 }
 .h-auto {
   height: auto !important;
@@ -13872,7 +13875,7 @@ select.sort {
 .nav-tabs li a {
   transition: all 0.4s ease;
 }
-.nav-tabs li a.active {
+.nav-tabs li div.active {
   border-bottom: 2px #333 solid !important;
   color: #000 !important;
 }

@@ -8,6 +8,8 @@ import Contects from "../../components/Contects/Contects";
 import PortfolioJob from "../../components/PortfolioJob/PortfolioJob";
 import FriendsPage from "../../components/FriendsPage/FriendsPage";
 import Footer from "../../components/Footer/Footer";
+import Portfolio from "../Portfolio/Portfolio";
+import Settings from "../../components/Settings/Settings";
 const Home = () => {
   const [active, setActive] = useState("Home");
   const [activeRightbar, setActiveRightbar] = useState(false);
@@ -86,7 +88,7 @@ const Home = () => {
                 <div className="row feed-body">
                   {path === "contact" ? (
                     <Contects />
-                  ) : path === "portfolioJob mt-5" ? (
+                  ) : path === "portfolioJob" ? (
                     <PortfolioJob />
                   ) : (
                     <SectionCenter active={active} />
@@ -119,6 +121,35 @@ const Home = () => {
             }
           >
             <PortfolioJob />
+          </div>
+        ) : page === "portfolio" ? (
+          <div
+            className={
+              menuAuctive
+                ? "main-content right-chat-active menu-active me-3"
+                : "main-content right-chat-active ps-0 me-3"
+            }
+          >
+            <div className="middle-sidebar-bottom">
+              <div className="middle-sidebar-left">
+                <div className="row feed-body">
+                  <Portfolio />
+                  <SideBarLeft
+                    activeLeftBar={activeLeftBar}
+                    themeColor={themeColor}
+                    setThemecolor={setThemecolor}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : page === "settings" ? (
+          <div className="main-content bg-lightblue theme-dark-bg right-chat-active">
+            <div className="middle-sidebar-bottom">
+              <div className="middle-sidebar-left">
+                <Settings />
+              </div>
+            </div>
           </div>
         ) : (
           <div
