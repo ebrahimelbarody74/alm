@@ -875,9 +875,9 @@ function Header({
           </div>
         </div>
       </div>
-      <a href="#" className="p-0 me-3 menu-icon">
+      <Link to="/settings" className="p-0 me-3 menu-icon">
         <img src={img2} alt="user" className="w40 mt--1 rounded-circle" />
-      </a>
+      </Link>
     </div>
   );
 }
